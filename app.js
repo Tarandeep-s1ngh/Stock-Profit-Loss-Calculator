@@ -17,7 +17,16 @@ function formHandler(e) {
     quant = Number(inputs[1].value);
     currentPrice = Number(inputs[2].value);
 
-    if(currentPrice > costPrice) {
+    if(currentPrice === costPrice) {
+
+
+        output.innerHTML = `Even-Steven!😇 Niether a gain, nor a loss`;
+
+        gif.innerHTML = '<img src="https://media.giphy.com/media/PjaTjG8ct5cNOtjjZg/giphy.gif" style="display: block; margin: 1.5rem auto 1rem; max-width: 300px; max-height: 300px; border-radius: 10px;">';
+
+    }
+    
+    else if(currentPrice > costPrice) {
 
         let profit = (currentPrice - costPrice)*quant;
         let profitPer = (((currentPrice - costPrice)*100)/costPrice).toFixed(2);
@@ -38,5 +47,8 @@ function formHandler(e) {
         gif.innerHTML = '<img src="https://media.giphy.com/media/W0c3xcZ3F1d0EYYb0f/giphy.gif" style="display: block; margin: 1.5rem auto 1rem; max-width: 300px; max-height: 300px; border-radius: 10px;">';
 
     }
+
+    // document.getElementsByTagName("footer").scrollIntoView();
+    // window.scrollTo(0,document.body.scrollHeight);
      
 }

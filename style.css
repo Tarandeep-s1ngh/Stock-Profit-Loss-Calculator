@@ -78,3 +78,25 @@ button:hover {
     margin-top: 1.5rem;
     font-size: 1.3rem;
 }
+
+.footerLink a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 3.5rem 1rem;
+    font-size: 1.1rem;
+    color: black;
+  }
+  
+footer {
+    padding-bottom: 1rem;
+  }
+  
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
