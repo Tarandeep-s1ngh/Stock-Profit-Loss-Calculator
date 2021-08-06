@@ -50,7 +50,6 @@ button {
     background-color: var(--offWhite);
     color: black;
     font-weight: bold;
-    border: 2px solid var(--offWhite);
     padding: 0.5rem 0.7rem;
     border-radius: 10px;
 }
@@ -58,5 +57,9 @@ button {
 button:hover {
     background-color: black;
     color: white;
-    border: 2px solid var(--offWhite);
+}
+
+.output {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
 }
