@@ -13,6 +13,9 @@ form.addEventListener("submit", formHandler);
 function formHandler(e) {
     e.preventDefault();
 
+    var html = document.documentElement; 
+    html.scrollTop += 200;
+
     costPrice = Number(inputs[0].value);
     quant = Number(inputs[1].value);
     currentPrice = Number(inputs[2].value);
