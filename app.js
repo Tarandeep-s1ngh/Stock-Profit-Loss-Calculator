@@ -2,6 +2,7 @@
 var form = document.querySelector(".main-form");
 var inputs = document.querySelectorAll(".inputField");
 var output = document.querySelector(".output");
+var footerDiv = document.querySelector('footer');
 var gif = document.querySelector(".gif");
 
 let costPrice = 0;
@@ -13,12 +14,12 @@ form.addEventListener("submit", formHandler);
 function formHandler(e) {
     e.preventDefault();
 
-    var html = document.documentElement; 
-    html.scrollTop += 200;
+    footerDiv.scrollIntoView({behavior: "smooth", bottom: 0});
 
     costPrice = Number(inputs[0].value);
     quant = Number(inputs[1].value);
     currentPrice = Number(inputs[2].value);
+
 
     if(currentPrice === costPrice) {
 
@@ -51,6 +52,8 @@ function formHandler(e) {
 
     }
 
+    // var html = document.documentElement; 
+    // html.scrollTop += 200;
     // document.getElementsByTagName("footer").scrollIntoView();
     // window.scrollTo(0,document.body.scrollHeight);
      
