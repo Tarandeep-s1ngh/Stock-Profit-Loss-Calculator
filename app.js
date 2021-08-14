@@ -2,12 +2,16 @@
 var form = document.querySelector(".main-form");
 var inputs = document.querySelectorAll(".inputField");
 var output = document.querySelector(".output");
+var pageWrapy = document.querySelector(".page-wrap");
 var footerDiv = document.querySelector('footer');
 var gif = document.querySelector(".gif");
 
 let costPrice = 0;
 let quant = 0;
 let currentPrice = 0;
+
+    pageWrapy.classList.remove("happyGif");
+    pageWrapy.classList.remove("sadGif"); 
 
 form.addEventListener("submit", formHandler);
 
@@ -39,6 +43,8 @@ function formHandler(e) {
 
         gif.innerHTML = '<img src="https://media.giphy.com/media/67ThRZlYBvibtdF9JH/giphy.gif" style="display: block; margin: 1.5rem auto 1rem; max-width: 300px; max-height: 300px; border-radius: 10px;">';
 
+        pageWrapy.classList.add("happyGif");
+
     }
 
     else {
@@ -49,6 +55,8 @@ function formHandler(e) {
         output.innerHTML = `Oh No!😦 You lost ${lossPer}%. Your total loss is ₹${loss}`;
 
         gif.innerHTML = '<img src="https://media.giphy.com/media/W0c3xcZ3F1d0EYYb0f/giphy.gif" style="display: block; margin: 1.5rem auto 1rem; max-width: 300px; max-height: 300px; border-radius: 10px;">';
+
+        pageWrapy.classList.add("sadGif");
 
     }
 

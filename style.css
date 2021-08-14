@@ -36,6 +36,20 @@ main {
     flex-grow: 1;
 }
 
+.happyGif {
+    background-image: url("https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/giphy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.sadGif {
+    background-image: url("https://media.giphy.com/media/DOOmrLn8OwklW/giphy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
 .highlight {
     color: var(--orange);
 }
