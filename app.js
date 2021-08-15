@@ -32,6 +32,8 @@ function formHandler(e) {
 
         gif.innerHTML = '<img src="https://media.giphy.com/media/PjaTjG8ct5cNOtjjZg/giphy.gif" style="display: block; margin: 1.5rem auto 1rem; max-width: 300px; max-height: 300px; border-radius: 10px;">';
 
+        pageWrapy.classList.remove("happyGif");
+        pageWrapy.classList.remove("sadGif"); 
     }
     
     else if(currentPrice > costPrice) {
@@ -43,6 +45,7 @@ function formHandler(e) {
 
         gif.innerHTML = '<img src="https://media.giphy.com/media/67ThRZlYBvibtdF9JH/giphy.gif" style="display: block; margin: 1.5rem auto 1rem; max-width: 300px; max-height: 300px; border-radius: 10px;">';
 
+        pageWrapy.classList.remove("sadGif"); 
         pageWrapy.classList.add("happyGif");
 
     }
