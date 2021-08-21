@@ -53,7 +53,7 @@ function formHandler(e) {
     else {
 
         let loss = (costPrice - currentPrice)*quant;
-        let lossPer = (((costPrice - currentPrice)*100)/currentPrice).toFixed(2);
+        let lossPer = (((costPrice - currentPrice)*100)/costPrice).toFixed(2);
 
         output.innerHTML = `Oh No!😦 You lost ${lossPer}%. Your total loss is ₹${loss}`;
 
